@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+<title>ShopEase - Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<ul id="cart-list"></ul>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="brand">
+        <img src="logo.png.jpeg" class="logo"
+        alt="ShopEase Logo">
+        <h1 class="site-title">ShopEase</h1>
+        </div>
+         <div class="cart">
+          🛒  Cart: <span id="cart-count">0</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+<!-- Hero Banner -->
+<section class="hero">
+    <h2>Welcome to ShopEase</h2>
+    <p>your one-stop for perfect products!</p>
+    <a href="products.html"
+    class="btn">Shop Now</a>
+</section>
+
+<!-- Featured Products -->
+<section class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+    <div class="product-card">
+        <img src="product1.png.jpeg"
+        alt="Samsung S25 Ultra">
+        <h3>Samsung S25 Ultra</h3>
+        <p>$1,300</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="product2.png.jpeg"
+            alt="iPhone 17 pro">
+            <h3>iPhone 17 pro</h3>
+            <p>$1,099</p>
+            <button class="btn add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="product3.png.jpeg"
+            alt="Google Pixel 10 Pro">
+            <h3>Google Pixel 10 Pro</h3>
+            <p>$999</p>
+            <button class="btn add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 ShopEase. All rights reserved.</p>
+</footer>
+
+<div class="cart-modal" id="cart-modal">
+    <div class="cart-content">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <button id="close-cart"
+        class="btn">Close</button>
+    </div>
+</div>
+
+<!-- Cart Modal -->
+ <div class="cart-modal" id="cart-modal">
+    <div class="cart-content">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <button id="close-cart"
+        class="btn">Close</button>
+    </div>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>

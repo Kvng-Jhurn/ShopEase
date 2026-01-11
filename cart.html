@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Your Cart</h1>
+    <ul id="cart-list"></ul>
+    <script>
+    const cart =
+    JSON.parse(localStorage.getItem("cart")) || [];
+    const CartList = 
+    document.getElementById("cart-list");
+
+    cart.forEach(item => {
+        const li = document.createElement("li")
+        li.textContent = item;
+        CartList.appendChild(li);
+    });
+</script>
+
+</body>
+</html>
